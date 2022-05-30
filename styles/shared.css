@@ -3,6 +3,7 @@
   font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 body {
@@ -96,9 +97,11 @@ main {
 .main-footer {
   width: 100%;
   display: flex;
+  justify-content: center;
   background-color: #666565;
   border-top: 1px solid #ffffef;
   padding: 1rem;
+  margin: 0;
 }
 
 .footer-items {
@@ -110,13 +113,64 @@ main {
 }
 .footer-item a {
   padding: 0;
-  margin: 0.5rem 0.5rem;
+  margin: 0.5rem 0.8rem;
   text-decoration: none;
   color: #c9c9c7;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .footer-item a:hover,
 .footer-item a:active {
   color: #ffffef;
+}
+
+@media (min-width: 40rem) {
+  .my-name {
+    font-size: 1.5rem;
+  }
+  .my-lastname {
+    font-size: 1.5rem;
+    margin-left: 0.4rem;
+  }
+  .logo {
+    width: 4rem;
+    height: 4rem;
+  }
+  .main-nav-item-resume-btn {
+    font-size: 1.3rem;
+    padding: 1rem 1rem;
+  }
+  .main-nav-item-portfolio-btn {
+    font-size: 1.3rem;
+    padding: 1rem 1rem;
+  }
+}
+
+@media screen and (max-width: 370px) and (min-width: 220px) {
+  .my-name {
+    font-size: 0.6rem;
+    margin: 0rem 0rem;
+    padding: 0.5rem 0.1rem;
+  }
+  .my-lastname {
+    font-size: 0.6rem;
+    margin: 0rem 0rem;
+    padding: 0.5rem 0.1rem;
+  }
+  .logo {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .main-nav-item-resume-btn {
+    font-size: 0.5rem;
+
+    text-align: center;
+    margin: 0rem 0.1rem;
+  }
+  .main-nav-item-portfolio-btn {
+    font-size: 0.5rem;
+
+    text-align: center;
+    margin: 0rem 0.1rem;
+  }
 }
