@@ -1,180 +1,225 @@
+@import "_variables";
+
 .section-2-container {
   display: grid;
   grid-template-rows: auto auto;
 }
-
 .information-button-flex {
   display: flex;
-  flex-direction: column;
+  flex: {
+    direction: column;
+  }
 }
-
 .nima {
   max-width: 60%;
   border-radius: 15rem;
   margin: 1rem 0.5rem;
-  margin-top: 3rem;
-  margin-left: 20%;
+  margin: {
+    top: 3rem;
+    left: 20%;
+  }
 }
-
 .nima-job-title {
   text-align: center;
-  font-size: 100%;
-  font-variant: small-caps;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font: {
+    size: 100%;
+    variant: small-caps;
+    family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
   color: #cacac5;
 }
-
 .nima-name {
-  font-size: 170%;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-weight: 600;
-  color: #ffffef;
-  text-align: center;
-  margin-top: 0.8rem;
-  margin-left: 0.5rem;
-}
+  font: {
+    size: 170%;
+    family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    weight: 600;
+  }
 
+  color: map-get($color, font);
+  text-align: center;
+  margin: {
+    top: 0.8rem;
+    left: 0.5rem;
+  }
+}
 .nima-description {
   width: 70%;
   text-align: left;
   margin: 1rem;
   padding: 1rem 0.5rem;
-  margin-left: 20%;
-  color: #ffffef;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 90%;
+  margin: {
+    left: 20%;
+  }
+  color: map-get($color, font);
+  font: {
+    family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    size: 90%;
+  }
 }
-
 .main-buttons {
   display: flex;
-  flex-direction: column;
+  flex: {
+    direction: column;
+  }
   align-items: center;
   justify-content: center;
   margin: 1rem 0.6rem;
   padding: 1rem;
 }
-
 .main-buttons-button1 {
   animation: download_cv 0.5s 2s;
-  background-color: #545454;
-  color: #ffffef;
+  background-color: map-get($color, main);
+  color: map-get($color, font);
   text-decoration: none;
-  border: 1px solid #38b6ff;
+  border: 1px solid map-get($color, second);
   border-radius: 1rem;
   padding: 0.5rem 1rem;
   width: 60%;
   text-align: center;
 }
-
 .main-buttons-button2 {
   padding: 0.5rem 1rem;
-  background-color: #545454;
+  background-color: map-get($color, main);
   color: #fff;
   text-decoration: none;
   text-align: center;
-  border: 1px solid #38b6ff;
+
+  border: 1px solid map-get($color, second);
   border-radius: 1rem;
   width: 40%;
-  margin-top: 0.5rem;
+  margin: {
+    top: 0.5rem;
+  }
 }
-
 .main-buttons a:hover,
 .main-buttons a:active {
   color: black;
-  background-color: #38b6ff;
+  background-color: map-get($color, second);
 }
-
 .what-I-do-title {
   padding: 1rem;
   text-align: center;
-  margin-top: 3rem;
-  font-weight: 500;
-  font-family: sans-serif;
-  color: #ffffef;
+  margin: {
+    top: 3rem;
+  }
+  font: {
+    weight: 500;
+    family: sans-serif;
+  }
+  color: map-get($color, font);
 }
-
 .what-I-do {
   margin: 0.5rem 1rem;
   padding: 0.5rem 1rem;
   display: grid;
+
   grid-template-rows: auto auto;
 }
-
 .web-design {
   margin: 0rem 1rem;
 }
-
 .flex-icon-text {
   display: flex;
-  flex-direction: row-reverse;
+  flex: {
+    direction: row-reverse;
+  }
   justify-content: flex-end;
   align-items: center;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin: {
+    top: 1rem;
+    bottom: 1rem;
+  }
 }
-
 .web-design-title {
   margin-left: 1rem;
-  color: #ffffef;
-  font-weight: 200;
+  color: map-get($color, font);
+  font: {
+    weight: 200;
+  }
 }
-
 .fas {
-  font-size: 36px;
-  margin-left: 10%;
-  color: #38b6ff;
+  font: {
+    size: 36px;
+  }
+  margin: {
+    left: 10%;
+  }
+  color: map-get($color, second);
 }
 
 .web-design-description {
-  color: #ffffef;
-  font-weight: 200;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: map-get($color, font);
+  font: {
+    weight: 200;
+    family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
 }
 
 .eCommerce {
-  margin-top: 1rem;
+  margin: {
+    top: 1rem;
+  }
 }
-
 .eCommerce-title {
-  margin-left: 1rem;
-  color: #ffffef;
-  font-weight: 200;
+  margin: {
+    left: 1rem;
+  }
+  color: map-get($color, font);
+  font: {
+    weight: 200;
+  }
 }
 
 .eCommerce-description {
-  color: #ffffef;
-  font-weight: 200;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin-left: 0.5rem;
-}
+  color: map-get($color, font);
+  font: {
+    weight: 200;
+    family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
 
+  margin: {
+    left: 0.5rem;
+  }
+}
 .fa-paintbrush {
-  color: #38b6ff;
-  font-size: 36px;
-  margin-left: 10%;
+  color: map-get($color, second);
+  font: {
+    size: 36px;
+  }
+  margin: {
+    left: 10%;
+  }
 }
 
 .fun-facts-title {
   padding: 1rem;
   text-align: center;
-  margin-top: 3rem;
-  font-weight: 500;
-  font-family: sans-serif;
-  color: #ffffef;
+  margin: {
+    top: 3rem;
+  }
+  font: {
+    weight: 500;
+    family: sans-serif;
+  }
+  color: map-get($color, font);
 }
 
 .fun-facts {
   display: flex;
-  flex-direction: column;
+  flex: {
+    direction: column;
+  }
   justify-content: center;
   align-items: center;
   margin: 1rem 0.5rem;
   padding: 1rem 0.5rem;
 }
-
 .client {
   display: flex;
-  flex-direction: column;
+  flex: {
+    direction: column;
+  }
   justify-content: center;
   align-items: center;
   background-color: #817f7f;
@@ -185,31 +230,40 @@
 }
 
 .fa-thumbs-up {
-  font-size: 38px;
-  color: #38b6ff;
+  font: {
+    size: 38px;
+  }
+  color: map-get($color, second);
   padding: 1rem;
 }
-
 .happy-client {
   padding: 0.5rem 0rem;
-  font-size: 1rem;
+  font: {
+    size: 1rem;
+  }
   text-align: center;
-  color: #ffffef;
-  font-family: sans-serif;
-  font-weight: 600;
+  color: map-get($color, font);
+  font: {
+    family: sans-serif;
+    weight: 600;
+  }
 }
-
 .happy-client-number {
   padding: 0.5rem 1rem;
-  color: #ffffef;
-  font-size: 35px;
-  font-weight: 600;
-  font-family: sans-serif;
+  color: map-get($color, font);
+
+  font: {
+    size: 35px;
+    weight: 600;
+    family: sans-serif;
+  }
 }
 
 .working-hours {
   display: flex;
-  flex-direction: column;
+  flex: {
+    direction: column;
+  }
   justify-content: center;
   align-items: center;
   background-color: #817f7f;
@@ -218,32 +272,39 @@
   border-radius: 20px;
   margin: 1rem 1rem;
 }
-
 .working-hours-text {
   padding: 0.5rem 0rem;
-  font-size: 1rem;
-  font-family: sans-serif;
-  font-weight: 600;
-  color: #ffffef;
+  font: {
+    size: 1rem;
+    family: sans-serif;
+    weight: 600;
+  }
+  color: map-get($color, font);
 }
 
 .fa-clock {
-  font-size: 38px;
-  color: #38b6ff;
+  font: {
+    size: 38px;
+  }
+  color: map-get($color, second);
   padding: 1rem;
 }
 
 .working-hours-number {
   padding: 0.5rem 1rem;
-  font-size: 35px;
-  color: #ffffef;
+  font: {
+    size: 35px;
+  }
+  color: map-get($color, font);
   font-weight: 600;
   font-family: sans-serif;
 }
 
 .coffee-consumed {
   display: flex;
-  flex-direction: column;
+  flex: {
+    direction: column;
+  }
   justify-content: center;
   align-items: center;
   background-color: #817f7f;
@@ -255,23 +316,28 @@
 
 .coffee-consumed-text {
   padding: 0.5rem 0rem;
-  font-size: 1rem;
-  font-family: sans-serif;
-  font-weight: 600;
-  color: #ffffef;
+  font: {
+    size: 1rem;
+    family: sans-serif;
+    weight: 600;
+  }
+  color: map-get($color, font);
 }
 
 .coffee-consumed-number {
   padding: 0.5rem 1rem;
-  font-size: 35px;
-  font-weight: 600;
-  font-family: sans-serif;
-  color: #ffffef;
+  font: {
+    size: 35px;
+    weight: 600;
+    family: sans-serif;
+  }
+  color: map-get($color, font);
 }
-
 .fa-gas-pump {
-  font-size: 38px;
-  color: #38b6ff;
+  font: {
+    size: 38px;
+  }
+  color: map-get($color, second);
   padding: 1rem;
 }
 
@@ -281,75 +347,86 @@
     display: grid;
     grid-template-columns: auto auto;
   }
-
   .nima {
     max-width: 80%;
     border-radius: 15rem;
     margin: 1rem 1rem;
-    margin-top: 3rem;
-    margin-left: 20%;
+    margin: {
+      top: 3rem;
+      left: 20%;
+    }
   }
-
   .information-button-flex {
     display: flex;
-    flex-direction: column;
+    flex: {
+      direction: column;
+    }
   }
-
   .nima-job-title {
-    font-size: 1.5rem;
+    font: {
+      size: 1.5rem;
+    }
   }
-
   .nima-name {
-    font-size: 2rem;
+    font: {
+      size: 2rem;
+    }
   }
-
   .nima-description {
-    font-size: 140%;
-    font-weight: 200;
+    font: {
+      size: 140%;
+      weight: 200;
+    }
   }
-
   .main-buttons-button1 {
-    font-size: larger;
+    font: {
+      size: larger;
+    }
   }
-
   .main-buttons-button2 {
-    font-size: larger;
+    font: {
+      size: larger;
+    }
   }
-
   .what-I-do-title {
     padding: 1rem;
     text-align: left;
-    margin-left: 3%;
-    margin-top: 3rem;
-    font-size: 2rem;
-    font-weight: 500;
-    font-family: sans-serif;
-    color: #ffffef;
-  }
+    margin: {
+      left: 3%;
+      top: 3rem;
+    }
+    font: {
+      size: 2rem;
+      weight: 500;
+      family: sans-serif;
+    }
 
+    color: map-get($color, font);
+  }
   .what-I-do {
     margin: 0.5rem 1rem;
     padding: 0.5rem 1rem;
     display: grid;
+
     grid-template-columns: 50% 50%;
   }
-
   .title-border {
-    border-bottom: 1px solid #38b6ff;
+    border-bottom: 1px solid map-get($color, second);
     width: 14%;
-    margin-left: 2%;
+    margin: {
+      left: 2%;
+    }
   }
-
   .web-design {
     margin: 1em;
-    border: 1px solid #38b6ff;
+    border: 1px solid map-get($color, second);
     border-radius: 1rem;
     padding: 1rem;
   }
 
   .eCommerce {
     margin: 1em;
-    border: 1px solid #38b6ff;
+    border: 1px solid map-get($color, second);
     border-radius: 1rem;
     padding: 1rem;
   }
@@ -358,83 +435,104 @@
     font-size: 2rem;
     padding: 1rem;
     text-align: left;
-    margin-left: 3%;
-    margin-top: 3rem;
-    font-weight: 500;
-    font-family: sans-serif;
-    color: #ffffef;
+    margin: {
+      left: 3%;
+      top: 3rem;
+    }
+    font: {
+      weight: 500;
+      family: sans-serif;
+    }
+    color: map-get($color, font);
   }
 
   .fun-facts {
-    flex-direction: row;
+    flex: {
+      direction: row;
+    }
   }
 }
 @media screen and (max-width: 370px) and (min-width: 280px) {
   .nima-job-title {
-    font-size: smaller;
+    font: {
+      size: smaller;
+    }
   }
-
   .nima-name {
-    font-size: 1.4rem;
+    font: {
+      size: 1.4rem;
+    }
   }
-
   .main-buttons-button1 {
-    font-size: smaller;
+    font: {
+      size: smaller;
+    }
   }
 
   .main-buttons-button2 {
-    font-size: smaller;
+    font: {
+      size: smaller;
+    }
   }
 
   .what-I-do-title {
-    font-size: 1.4rem;
+    font: {
+      size: 1.4rem;
+    }
   }
-
   .web-design-title {
-    font-size: 1rem;
+    font: {
+      size: 1rem;
+    }
   }
 
   .web-design-description {
-    font-size: smaller;
+    font: {
+      size: smaller;
+    }
   }
-
   .eCommerce-title {
-    font-size: 1rem;
+    font: {
+      size: 1rem;
+    }
   }
-
   .eCommerce-description {
-    font-size: smaller;
+    font: {
+      size: smaller;
+    }
   }
-
   .fun-facts-title {
-    font-size: 1.4rem;
+    font: {
+      size: 1.4rem;
+    }
   }
-
   .client {
     padding: 0rem 5rem;
   }
-
   .happy-client {
-    font-size: 0.8rem;
+    font: {
+      size: 0.8rem;
+    }
   }
-
   .working-hours {
     padding: 0rem 4.2rem;
   }
-
   .working-hours-text {
-    font-size: 0.8rem;
+    font: {
+      size: 0.8rem;
+    }
   }
-
   .coffee-consumed {
     padding: 0rem 4.4rem;
   }
-
   .coffee-consumed-text {
-    font-size: 0.8rem;
+    font: {
+      size: 0.8rem;
+    }
     text-align: center;
   }
 }
+
 @keyframes download_cv {
   from {
     transform: rotateZ(0) rotateY(0) rotateX(0);
@@ -443,5 +541,3 @@
     transform: rotateY(40deg);
   }
 }
-
-/*# sourceMappingURL=main.css.map */

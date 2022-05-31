@@ -1,0 +1,384 @@
+@import "_variables";
+.first-part-page {
+  display: flex;
+  flex: {
+    direction: column;
+  }
+  background-color: #666565;
+}
+
+.contact-title {
+  color: map-get($color, font);
+  margin: {
+    left: 8%;
+  }
+  padding: {
+    top: 5%;
+  }
+  font: {
+    weight: 500;
+    family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+}
+
+.get-in-touch {
+  font: {
+    size: 0.8rem;
+    weight: 400;
+    family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  margin: {
+    left: 7%;
+  }
+
+  padding: {
+    top: 2%;
+    bottom: 4%;
+  }
+
+  color: #c9c9c7;
+}
+
+.second-part {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  padding: 0;
+  margin: 1rem 1.7rem;
+}
+
+.mobile-number-part {
+  border: {
+    bottom: 1px solid #696969;
+  }
+  margin: 0.5rem 1rem;
+}
+.fa-mobile-phone {
+  font: {
+    size: 2rem;
+  }
+  color: map-get($color, second);
+  text-align: center;
+}
+.mobile-number {
+  font: {
+    size: 1rem;
+    weight: 400;
+  }
+  text-decoration: none;
+
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0.5rem;
+  margin: {
+    top: -0.2rem;
+  }
+  color: map-get($color, font);
+}
+.flex-icon-texts {
+  display: flex;
+  flex: {
+    direction: row;
+  }
+  text-align: center;
+}
+
+.mobile-number-description {
+  font: {
+    size: 1rem;
+    weight: 400;
+  }
+
+  color: map-get($color, font);
+}
+.address {
+  border: {
+    bottom: 1px solid #696969;
+  }
+  margin: 0.5rem 1rem;
+}
+.fa-location-dot {
+  font: {
+    size: 2rem;
+  }
+  color: map-get($color, second);
+  text-align: center;
+}
+
+.address-city {
+  font: {
+    size: 1rem;
+    weight: 400;
+  }
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0.5rem;
+  margin: {
+    top: -0.2rem;
+  }
+  color: map-get($color, font);
+
+  text-decoration: none;
+}
+
+.full-address {
+  font: {
+    size: 1rem;
+    weight: 400;
+  }
+  color: map-get($color, font);
+}
+
+.email {
+  border: {
+    bottom: 1px solid #696969;
+  }
+  margin: 0.5rem 1rem;
+}
+.fa-envelope {
+  font: {
+    size: 2rem;
+  }
+  color: map-get($color, second);
+  text-align: center;
+}
+.email-address {
+  font: {
+    size: 1rem;
+    weight: 400;
+  }
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0.5rem;
+  margin: {
+    top: -0.2rem;
+  }
+  color: map-get($color, font);
+
+  text-decoration: none;
+}
+.email-description {
+  font: {
+    size: 1rem;
+    weight: 400;
+  }
+  color: map-get($color, font);
+}
+.third-part {
+  margin: 0em;
+}
+.title-third-part {
+  color: map-get($color, font);
+  font: {
+    family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    weight: 300;
+  }
+  text-align: center;
+  margin: 1rem 1rem;
+}
+.contact-form {
+  margin: 1rem 0.5rem;
+  display: flex;
+  flex: {
+    direction: column;
+  }
+  justify-content: center;
+  align-items: center;
+}
+.contact-form input {
+  display: flex;
+  flex: {
+    direction: row;
+  }
+  justify-content: center;
+
+  margin: 1rem;
+  padding: 0.4rem;
+  width: 90%;
+  border: {
+    radius: 0.5rem;
+  }
+  border: 1px solid map-get($color, second);
+}
+.message {
+  border-radius: 10px;
+  margin: auto;
+  border: 1px solid map-get($color, second);
+  width: 90%;
+  padding: 1rem 0.5rem;
+}
+.message a:hover,
+.message a:active {
+  color: black;
+  background-color: map-get($color, second);
+}
+::placeholder {
+  color: rgb(58, 58, 58);
+  font: {
+    family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+}
+input:focus {
+  border: 1px solid rgb(141, 177, 231);
+  outline: none;
+  background-color: rgb(208, 220, 238);
+}
+textarea:focus {
+  border: 1px solid rgb(141, 177, 231);
+  outline: none;
+  background-color: rgb(208, 220, 238);
+}
+.contact-form-button {
+  background-color: map-get($color, main);
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid map-get($color, second);
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  margin: {
+    top: 15%;
+  }
+  margin: 1rem;
+  font: {
+    style: 1rem;
+    weight: 400;
+  }
+}
+.contact-form input::placeholder {
+  font: {
+    family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+}
+
+.contact-form a:hover,
+.contact-form a:active {
+  color: black;
+  background-color: map-get($color, second);
+}
+
+.g-recaptcha {
+  margin: 1rem 3rem;
+}
+
+@media (min-width: 40rem) {
+  .first-part-page {
+    flex-direction: row;
+  }
+  .contact-title {
+    color: map-get($color, font);
+    margin: {
+      left: 4%;
+      bottom: 2rem;
+    }
+    padding: {
+      top: 2%;
+      bottom: 1%;
+    }
+    font: {
+      weight: 500;
+      family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+  }
+
+  .get-in-touch {
+    font: {
+      size: 1.1rem;
+      family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      weight: 400;
+    }
+    margin: {
+      left: 70%;
+    }
+    padding: {
+      top: 2%;
+      bottom: 4%;
+    }
+    color: #c9c9c7;
+  }
+  .second-part {
+    display: flex;
+    flex: {
+      direction: row;
+    }
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: {
+      top: 5rem;
+      bottom: 2rem;
+    }
+  }
+  .title-third-part {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-form {
+    display: flex;
+    flex: {
+      direction: column;
+    }
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-form input {
+    margin: 1rem;
+    padding: 0.4rem;
+    width: 40%;
+    border-radius: 0.5rem;
+    border: 1px solid map-get($color, second);
+  }
+  .contact-form-button {
+    background-color: map-get($color, main);
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid map-get($color, second);
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    margin: {
+      top: 15%;
+    }
+    margin: 1rem;
+    font: {
+      style: 1rem;
+      weight: 400;
+    }
+  }
+}
+@media (min-width: 40rem) {
+  .message {
+    border-radius: 10px;
+    margin: auto;
+    border: 1px solid map-get($color, second);
+    width: 40%;
+    padding: 1rem 0.5rem;
+  }
+}
+@media screen and (max-width: 370px) and (min-width: 220px) {
+  .second-part {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    padding: 0;
+    margin: 0.5rem 1rem;
+  }
+  .title-third-part {
+    font: {
+      size: 1.5rem;
+    }
+  }
+  .g-recaptcha {
+    max-width: 90%;
+  }
+  .mobile-number-description {
+    font: {
+      size: smaller;
+    }
+  }
+  .full-address {
+    font: {
+      size: smaller;
+    }
+  }
+  .email-description {
+    font: {
+      size: smaller;
+    }
+  }
+}

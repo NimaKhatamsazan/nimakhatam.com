@@ -5,7 +5,7 @@
 }
 
 .contact-title {
-  color: #fffffe;
+  color: #ffffef;
   margin-left: 8%;
   padding-top: 5%;
   font-weight: 500;
@@ -14,11 +14,11 @@
 
 .get-in-touch {
   font-size: 0.8rem;
-  margin-left: 7%;
+  font-weight: 400;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 7%;
   padding-top: 2%;
   padding-bottom: 4%;
-  font-weight: 400;
   color: #c9c9c7;
 }
 
@@ -26,28 +26,30 @@
   display: grid;
   grid-template-rows: auto auto auto;
   padding: 0;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin: 1rem 1.7rem;
 }
 
 .mobile-number-part {
   border-bottom: 1px solid #696969;
   margin: 0.5rem 1rem;
 }
+
 .fa-mobile-phone {
   font-size: 2rem;
   color: #38b6ff;
   text-align: center;
 }
+
 .mobile-number {
   font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
   padding: 0.5rem 1rem;
   margin: 0.5rem 0.5rem;
   margin-top: -0.2rem;
-  color: #fffffe;
-  font-weight: 400;
-  text-decoration: none;
+  color: #ffffef;
 }
+
 .flex-icon-texts {
   display: flex;
   flex-direction: row;
@@ -57,12 +59,14 @@
 .mobile-number-description {
   font-size: 1rem;
   font-weight: 400;
-  color: #fffffe;
+  color: #ffffef;
 }
+
 .address {
   border-bottom: 1px solid #696969;
   margin: 0.5rem 1rem;
 }
+
 .fa-location-dot {
   font-size: 2rem;
   color: #38b6ff;
@@ -71,53 +75,59 @@
 
 .address-city {
   font-size: 1rem;
+  font-weight: 400;
   padding: 0.5rem 1rem;
   margin: 0.5rem 0.5rem;
   margin-top: -0.2rem;
-  color: #fffffe;
-  font-weight: 400;
+  color: #ffffef;
   text-decoration: none;
 }
 
 .full-address {
   font-size: 1rem;
   font-weight: 400;
-  color: #fffffe;
+  color: #ffffef;
 }
 
 .email {
   border-bottom: 1px solid #696969;
   margin: 0.5rem 1rem;
 }
+
 .fa-envelope {
   font-size: 2rem;
   color: #38b6ff;
   text-align: center;
 }
+
 .email-address {
   font-size: 1rem;
+  font-weight: 400;
   padding: 0.5rem 1rem;
   margin: 0.5rem 0.5rem;
   margin-top: -0.2rem;
-  color: #fffffe;
-  font-weight: 400;
+  color: #ffffef;
   text-decoration: none;
 }
+
 .email-description {
   font-size: 1rem;
   font-weight: 400;
-  color: #fffffe;
+  color: #ffffef;
 }
+
 .third-part {
   margin: 0em;
 }
+
 .title-third-part {
-  color: #fffffe;
+  color: #ffffef;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 300;
   text-align: center;
   margin: 1rem 1rem;
 }
+
 .contact-form {
   margin: 1rem 0.5rem;
   display: flex;
@@ -125,17 +135,18 @@
   justify-content: center;
   align-items: center;
 }
+
 .contact-form input {
   display: flex;
   flex-direction: row;
   justify-content: center;
-
   margin: 1rem;
   padding: 0.4rem;
   width: 90%;
   border-radius: 0.5rem;
   border: 1px solid #38b6ff;
 }
+
 .message {
   border-radius: 10px;
   margin: auto;
@@ -143,25 +154,30 @@
   width: 90%;
   padding: 1rem 0.5rem;
 }
+
 .message a:hover,
 .message a:active {
   color: black;
   background-color: #38b6ff;
 }
+
 ::placeholder {
   color: rgb(58, 58, 58);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
 input:focus {
   border: 1px solid rgb(141, 177, 231);
   outline: none;
   background-color: rgb(208, 220, 238);
 }
+
 textarea:focus {
   border: 1px solid rgb(141, 177, 231);
   outline: none;
   background-color: rgb(208, 220, 238);
 }
+
 .contact-form-button {
   background-color: #545454;
   color: #fff;
@@ -174,6 +190,7 @@ textarea:focus {
   font-style: 1rem;
   font-weight: 400;
 }
+
 .contact-form input::placeholder {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -192,25 +209,27 @@ textarea:focus {
   .first-part-page {
     flex-direction: row;
   }
+
   .contact-title {
-    color: #fffffe;
+    color: #ffffef;
     margin-left: 4%;
+    margin-bottom: 2rem;
     padding-top: 2%;
     padding-bottom: 1%;
     font-weight: 500;
-    margin-bottom: 2rem;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
 
   .get-in-touch {
     font-size: 1.1rem;
-    margin-left: 70%;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    margin-left: 70%;
     padding-top: 2%;
     padding-bottom: 4%;
-    font-weight: 400;
     color: #c9c9c7;
   }
+
   .second-part {
     display: flex;
     flex-direction: row;
@@ -220,18 +239,21 @@ textarea:focus {
     margin-top: 5rem;
     margin-bottom: 2rem;
   }
+
   .title-third-part {
     margin-top: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   .contact-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+
   .contact-form input {
     margin: 1rem;
     padding: 0.4rem;
@@ -239,6 +261,7 @@ textarea:focus {
     border-radius: 0.5rem;
     border: 1px solid #38b6ff;
   }
+
   .contact-form-button {
     background-color: #545454;
     color: #fff;
@@ -262,19 +285,32 @@ textarea:focus {
   }
 }
 @media screen and (max-width: 370px) and (min-width: 220px) {
+  .second-part {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    padding: 0;
+    margin: 0.5rem 1rem;
+  }
+
   .title-third-part {
     font-size: 1.5rem;
   }
+
   .g-recaptcha {
     max-width: 90%;
   }
+
   .mobile-number-description {
     font-size: smaller;
   }
+
   .full-address {
     font-size: smaller;
   }
+
   .email-description {
     font-size: smaller;
   }
 }
+
+/*# sourceMappingURL=contactUs.css.map */

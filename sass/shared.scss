@@ -1,3 +1,5 @@
+@import "_variables";
+
 * {
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
@@ -9,65 +11,70 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-  background-color: #545454;
+  background-color: map-get($color, main);
   display: grid;
   grid-template-areas: "header" "main" "footer";
   grid-template-rows: auto auto auto;
 }
-
 main {
   grid-area: main;
 }
 
 .main-header {
   padding: 0.5rem 1rem;
-  background-color: #545454;
+  background-color: map-get($color, main);
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex: {
+    direction: row;
+  }
   justify-content: space-between;
 }
-
 .logo_container {
   padding: 0;
   margin: 1rem 2rem;
   margin: 0;
   font-weight: 900;
   display: flex;
-  flex-direction: row;
+  flex: {
+    direction: row;
+  }
 }
-
 .my-name {
   text-decoration: none;
   padding: 0.25rem 0rem;
-  color: #ffffef;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 0.9rem;
-  font-weight: bolder;
-  margin-top: 0.5rem;
-  margin-left: 0.5rem;
+  color: map-get($color, font);
+  font: {
+    family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    size: 0.9rem;
+    weight: bolder;
+  }
+  margin: {
+    top: 0.5rem;
+    left: 0.5rem;
+  }
 }
-
 .my-lastname {
   text-decoration: none;
   padding: 0.25rem 0rem;
-  color: #ffffef;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 0.9rem;
-  font-weight: 100;
-  margin-top: 0.5rem;
-  margin-left: 0.2rem;
+  color: map-get($color, font);
+  font: {
+    family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    size: 0.9rem;
+    weight: 100;
+  }
+  margin: {
+    top: 0.5rem;
+    left: 0.2rem;
+  }
 }
-
 .logo {
   width: 2rem;
   height: 2rem;
 }
-
 .main_nav {
   display: flex;
 }
-
 .main_nav_items {
   display: flex;
   padding: 0;
@@ -79,29 +86,26 @@ main {
   margin: 0.2rem;
   display: flex;
 }
-
 .main-nav-item-resume-btn {
-  background-color: #545454;
-  color: #fff;
+  background-color: map-get($color, main);
+  color: map-get($color, font);
   text-decoration: none;
-  border: 1px solid #38b6ff;
+  border: 1px solid map-get($color, second);
   border-radius: 1rem;
   padding: 0.5rem 0.7rem;
 }
-
 .main-nav-item-portfolio-btn {
-  background-color: #545454;
-  color: #fff;
+  background-color: map-get($color, main);
+  color: map-get($color, font);
   text-decoration: none;
-  border: 1px solid #38b6ff;
+  border: 1px solid map-get($color, second);
   border-radius: 1rem;
   padding: 0.5rem 0.7rem;
 }
-
 .main_nav_item a:hover,
 .main_nav_item a:active {
   color: black;
-  background-color: #38b6ff;
+  background-color: map-get($color, second);
 }
 
 .main-footer {
@@ -110,18 +114,22 @@ main {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #666565;
-  border-top: 1px solid #ffffef;
+  background-color: map-get($color, footer);
+  border: {
+    top: 1px solid map-get($color, font);
+  }
 }
 
 .footer-items {
   display: flex;
-  flex-direction: row;
+  flex: {
+    direction: row;
+  }
   justify-content: space-between;
+
   list-style: none;
   align-items: center;
 }
-
 .footer-item a {
   padding: 0;
   margin: 0.5rem 0.8rem;
@@ -132,63 +140,70 @@ main {
 
 .footer-item a:hover,
 .footer-item a:active {
-  color: #ffffef;
+  color: map-get($color, font);
 }
 
 @media (min-width: 40rem) {
   .my-name {
-    font-size: 1.5rem;
+    font: {
+      size: 1.5rem;
+    }
   }
-
   .my-lastname {
-    font-size: 1.5rem;
+    font: {
+      size: 1.5rem;
+    }
     margin-left: 0.4rem;
   }
-
   .logo {
     width: 4rem;
     height: 4rem;
   }
-
   .main-nav-item-resume-btn {
-    font-size: 1.3rem;
+    font: {
+      size: 1.3rem;
+    }
     padding: 1rem 1rem;
   }
-
   .main-nav-item-portfolio-btn {
-    font-size: 1.3rem;
+    font: {
+      size: 1.3rem;
+    }
     padding: 1rem 1rem;
   }
 }
+
 @media screen and (max-width: 370px) and (min-width: 220px) {
   .my-name {
-    font-size: 0.6rem;
+    font: {
+      size: 0.6rem;
+    }
     margin: 0rem 0rem;
     padding: 0.5rem 0.1rem;
   }
-
   .my-lastname {
-    font-size: 0.6rem;
+    font: {
+      size: 0.6rem;
+    }
     margin: 0rem 0rem;
     padding: 0.5rem 0.1rem;
   }
-
   .logo {
     width: 1.5rem;
     height: 1.5rem;
   }
-
   .main-nav-item-resume-btn {
-    font-size: 0.5rem;
+    font: {
+      size: 0.5rem;
+    }
     text-align: center;
     margin: 0rem 0.1rem;
   }
-
   .main-nav-item-portfolio-btn {
-    font-size: 0.5rem;
+    font: {
+      size: 0.5rem;
+    }
     text-align: center;
     margin: 0rem 0.1rem;
   }
 }
-
-/*# sourceMappingURL=shared.css.map */
